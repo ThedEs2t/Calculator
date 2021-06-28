@@ -12,9 +12,17 @@ namespace calcul
 {
     public partial class Form1 : Form
     {
-        float a, b;
-        int count;
-        bool znak = true;
+        private const bool V = true;
+        private double a, b;
+
+        public Form1(float a, float b)
+        {
+            this.a = a;
+            this.b = b;
+        }
+
+        private int count;
+        bool znak = V;
         public Form1()
         {
             InitializeComponent();
@@ -45,7 +53,6 @@ namespace calcul
 
         private void button4_Click(object sender, EventArgs e)
         {
-
             a = float.Parse(textBox1.Text);
             textBox1.Clear();
             count = 1;
@@ -127,14 +134,13 @@ namespace calcul
             textBox1.Text = textBox1.Text + ",";
         }
 
-        private void button15_Click(object sender, EventArgs e)
+        private void Button15_Click(object sender, EventArgs e)
         {
-
             a = float.Parse(textBox1.Text);
             textBox1.Clear();
             count = 2;
             label1.Text = a.ToString() + "-";
-            znak = true;
+            znak = V;
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -171,6 +177,17 @@ namespace calcul
             }
         }
 
+        private void button20_Click(object sender, EventArgs e)
+        {
+           
+            a = double.Parse(textBox1.Text);
+            textBox1.Clear();
+            count = 5;
+            label1.Text = a.ToString() + "^";
+            znak = true;
+
+        }
+
         private void calculate()
         {
             switch (count)
@@ -190,6 +207,10 @@ namespace calcul
                     break;
                 case 4:
                     b = a / float.Parse(textBox1.Text);
+                    textBox1.Text = b.ToString();
+                    break;
+                case 5:
+                    b = Math.Pow(a, float.Parse(textBox1.Text));
                     textBox1.Text = b.ToString();
                     break;
 

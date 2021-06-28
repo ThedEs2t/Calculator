@@ -50,6 +50,7 @@ namespace calcul
             this.button17 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
+            this.button20 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -227,7 +228,7 @@ namespace calcul
             this.button15.TabIndex = 20;
             this.button15.Text = "-";
             this.button15.UseVisualStyleBackColor = true;
-            this.button15.Click += new System.EventHandler(this.button15_Click);
+            this.button15.Click += new System.EventHandler(this.Button15_Click);
             // 
             // button17
             // 
@@ -259,11 +260,22 @@ namespace calcul
             this.button19.UseVisualStyleBackColor = true;
             this.button19.Click += new System.EventHandler(this.button19_Click);
             // 
+            // button20
+            // 
+            this.button20.Location = new System.Drawing.Point(291, 256);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(58, 37);
+            this.button20.TabIndex = 21;
+            this.button20.Text = "^";
+            this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(300, 362);
+            this.ClientSize = new System.Drawing.Size(361, 362);
+            this.Controls.Add(this.button20);
             this.Controls.Add(this.button15);
             this.Controls.Add(this.button17);
             this.Controls.Add(this.button18);
@@ -286,7 +298,7 @@ namespace calcul
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Калькулятор";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -316,6 +328,7 @@ namespace calcul
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Button button20;
     }
 }
 
