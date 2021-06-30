@@ -4,6 +4,10 @@
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
 # User-specific files
+#[http]
+#proxy = http://proxy.omgtu:8080
+#[https]
+#proxy = https://proxy.omgtu:8080
 *.rsuser
 *.suo
 *.user

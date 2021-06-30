@@ -53,21 +53,26 @@ namespace calcul
 
         private void button4_Click(object sender, EventArgs e)
         {
-            a = float.Parse(textBox1.Text);
-            textBox1.Clear();
-            count = 1;
-            label1.Text = a.ToString() + "+";
-            znak = true;
+            if (textBox1.Text != "")
+            {
+                a = float.Parse(textBox1.Text);
+                textBox1.Clear();
+                count = 1;
+                label1.Text = a.ToString() + "+";
+                znak = true;
+            }
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-
-            a = float.Parse(textBox1.Text);
-            textBox1.Clear();
-            count = 3;
-            label1.Text = a.ToString() + "*";
-            znak = true;
+            if (textBox1.Text != "")
+            {
+                a = float.Parse(textBox1.Text);
+                textBox1.Clear();
+                count = 3;
+                label1.Text = a.ToString() + "*";
+                znak = true;
+            }
         }
 
         private void button16_Click(object sender, EventArgs e)
@@ -136,21 +141,26 @@ namespace calcul
 
         private void Button15_Click(object sender, EventArgs e)
         {
-            a = float.Parse(textBox1.Text);
-            textBox1.Clear();
-            count = 2;
-            label1.Text = a.ToString() + "-";
-            znak = V;
+            if (textBox1.Text != "")
+            {
+                a = float.Parse(textBox1.Text);
+                textBox1.Clear();
+                count = 2;
+                label1.Text = a.ToString() + "-";
+                znak = V;
+            }
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-
-            a = float.Parse(textBox1.Text);
-            textBox1.Clear();
-            count = 4;
-            label1.Text = a.ToString() + "/";
-            znak = true;
+            if (textBox1.Text != "")
+            {
+                a = float.Parse(textBox1.Text);
+                textBox1.Clear();
+                count = 4;
+                label1.Text = a.ToString() + "/";
+                znak = true;
+            }
         }
 
         private void button13_Click(object sender, EventArgs e)
@@ -179,13 +189,23 @@ namespace calcul
 
         private void button20_Click(object sender, EventArgs e)
         {
-           
-            a = double.Parse(textBox1.Text);
-            textBox1.Clear();
-            count = 5;
-            label1.Text = a.ToString() + "^";
-            znak = true;
+            if (textBox1.Text != "")
+            {
+                a = double.Parse(textBox1.Text);
+                textBox1.Clear();
+                count = 5;
+                label1.Text = a.ToString() + "^";
+                znak = true;
+            }
+        }
 
+        private void textBox1_PressKey(object sender, KeyPressEventArgs e)
+        {
+            char number = e.KeyChar;
+            if ((e.KeyChar <= 47 || e.KeyChar >= 58) && number != 8 && (e.KeyChar <= 39 || e.KeyChar >= 46) && number != 47 && number != 61)
+            {
+                e.Handled = true;
+            }
         }
 
         private void calculate()

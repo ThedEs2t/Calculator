@@ -63,12 +63,15 @@ namespace calcul
             // 
             // textBox1
             // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Location = new System.Drawing.Point(12, 12);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(276, 36);
             this.textBox1.TabIndex = 1;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_PressKey);
             // 
             // button1
             // 
@@ -274,7 +277,8 @@ namespace calcul
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(361, 362);
+            this.BackgroundImage = global::calcul.Properties.Resources.j68f5NdeeRw;
+            this.ClientSize = new System.Drawing.Size(367, 367);
             this.Controls.Add(this.button20);
             this.Controls.Add(this.button15);
             this.Controls.Add(this.button17);
