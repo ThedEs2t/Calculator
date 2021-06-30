@@ -86,5 +86,14 @@
   <ItemGroup>
     <None Include="Properties\66ccb0f0a1554fa5bc8302eb9d5813f7.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\38263300-seamless-background-electronic-calculator.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\загружено.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\загружено.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

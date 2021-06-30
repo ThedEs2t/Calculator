@@ -63,6 +63,16 @@ namespace calcul.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _38263300_seamless_background_electronic_calculator {
+            get {
+                object obj = ResourceManager.GetObject("38263300-seamless-background-electronic-calculator", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _66ccb0f0a1554fa5bc8302eb9d5813f7 {
             get {
                 object obj = ResourceManager.GetObject("66ccb0f0a1554fa5bc8302eb9d5813f7", resourceCulture);
@@ -76,6 +86,26 @@ namespace calcul.Properties {
         internal static System.Drawing.Bitmap j68f5NdeeRw {
             get {
                 object obj = ResourceManager.GetObject("j68f5NdeeRw", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap загружено {
+            get {
+                object obj = ResourceManager.GetObject("загружено", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap загружено1 {
+            get {
+                object obj = ResourceManager.GetObject("загружено1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
