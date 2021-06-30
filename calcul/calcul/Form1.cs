@@ -23,9 +23,11 @@ namespace calcul
 
         private int count;
         bool znak = V;
+        
         public Form1()
         {
             InitializeComponent();
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -35,7 +37,7 @@ namespace calcul
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+           
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -172,7 +174,7 @@ namespace calcul
 
         private void label1_Click(object sender, EventArgs e)
         {
-           
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -208,34 +210,59 @@ namespace calcul
             }
         }
 
+        
+
+        
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            if(textBox1.Text != "")
+            {
+                a = double.Parse(textBox1.Text)* 180/ Math.PI;
+                textBox1.Clear();
+                count = 6;
+                label1.Text = a.ToString() + "";
+                znak = V;
+            }
+
+            
+        }
+
         private void calculate()
         {
-            switch (count)
+            
+            
             {
+                switch (count)
+                {
 
-                case 1:
-                    b = a + float.Parse(textBox1.Text);
-                    textBox1.Text = b.ToString();
-                    break;
-                case 2:
-                    b = a - float.Parse(textBox1.Text);
-                    textBox1.Text = b.ToString();
-                    break;
-                case 3:
-                    b = a * float.Parse(textBox1.Text);
-                    textBox1.Text = b.ToString();
-                    break;
-                case 4:
-                    b = a / float.Parse(textBox1.Text);
-                    textBox1.Text = b.ToString();
-                    break;
-                case 5:
-                    b = Math.Pow(a, float.Parse(textBox1.Text));
-                    textBox1.Text = b.ToString();
-                    break;
+                    case 1:
+                        b = a + float.Parse(textBox1.Text);
+                        textBox1.Text = b.ToString();
+                        break;
+                    case 2:
+                        b = a - float.Parse(textBox1.Text);
+                        textBox1.Text = b.ToString();
+                        break;
+                    case 3:
+                        b = a * float.Parse(textBox1.Text);
+                        textBox1.Text = b.ToString();
+                        break;
+                    case 4:
+                        b = a / float.Parse(textBox1.Text);
+                        textBox1.Text = b.ToString();
+                        break;
+                    case 5:
+                        b = Math.Pow(a, float.Parse(textBox1.Text));
+                        textBox1.Text = b.ToString();
+                        break;
+                    case 6:
+                        
+                        
+                    default:
+                        break;
+                }
 
-                default:
-                    break;
             }
 
         }

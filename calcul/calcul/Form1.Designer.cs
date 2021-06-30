@@ -51,13 +51,14 @@ namespace calcul
             this.button18 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(12, 51);
+            this.label1.Location = new System.Drawing.Point(11, 51);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 31);
+            this.label1.Size = new System.Drawing.Size(139, 31);
             this.label1.TabIndex = 0;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
@@ -65,10 +66,10 @@ namespace calcul
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(12, 12);
+            this.textBox1.Location = new System.Drawing.Point(11, 12);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(276, 36);
+            this.textBox1.Size = new System.Drawing.Size(273, 36);
             this.textBox1.TabIndex = 1;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_PressKey);
@@ -265,20 +266,30 @@ namespace calcul
             // 
             // button20
             // 
-            this.button20.Location = new System.Drawing.Point(291, 256);
+            this.button20.Location = new System.Drawing.Point(226, 51);
             this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(58, 37);
+            this.button20.Size = new System.Drawing.Size(58, 31);
             this.button20.TabIndex = 21;
             this.button20.Text = "^";
             this.button20.UseVisualStyleBackColor = true;
             this.button20.Click += new System.EventHandler(this.button20_Click);
             // 
+            // button21
+            // 
+            this.button21.Location = new System.Drawing.Point(156, 51);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(64, 31);
+            this.button21.TabIndex = 23;
+            this.button21.Text = "deg to rad";
+            this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::calcul.Properties.Resources.j68f5NdeeRw;
-            this.ClientSize = new System.Drawing.Size(367, 367);
+            this.ClientSize = new System.Drawing.Size(296, 365);
+            this.Controls.Add(this.button21);
             this.Controls.Add(this.button20);
             this.Controls.Add(this.button15);
             this.Controls.Add(this.button17);
@@ -333,6 +344,7 @@ namespace calcul
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Button button21;
     }
 }
 
