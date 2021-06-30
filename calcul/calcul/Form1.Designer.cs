@@ -56,6 +56,7 @@ namespace calcul
             // 
             // label1
             // 
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(11, 51);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(139, 31);
@@ -66,6 +67,7 @@ namespace calcul
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox1.Location = new System.Drawing.Point(11, 12);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -305,7 +307,7 @@ namespace calcul
             this.button21.Name = "button21";
             this.button21.Size = new System.Drawing.Size(64, 31);
             this.button21.TabIndex = 23;
-            this.button21.Text = "deg to rad";
+            this.button21.Text = "rad to deg";
             this.button21.UseVisualStyleBackColor = false;
             this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
