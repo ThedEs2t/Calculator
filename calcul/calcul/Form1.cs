@@ -23,7 +23,7 @@ namespace calcul
         }
 
         private int count;
-        private bool znak = V;
+        bool znak = V;
         
         public Form1()
         {
@@ -168,6 +168,7 @@ namespace calcul
 
         private void button13_Click(object sender, EventArgs e)
         {
+
             if(textBox1.Text !="")
             {
                 b = double.Parse(textBox1.Text);
@@ -182,6 +183,7 @@ namespace calcul
             textBox1.Clear();
             label1.Text = result.ToString();
             znak = false;
+           
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -232,6 +234,10 @@ namespace calcul
                 label1.Text = a.ToString() + "";
                 znak = V;
             }
+
+            
         }
+
+       
     }
 }

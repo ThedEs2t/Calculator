@@ -6,53 +6,11 @@ using System.Threading.Tasks;
 
 namespace calcul
 {
-  
-    interface calculator2
-    {
-        double calculate(double a, double b);
-    }
-    class Plus : calculator2
-    {
-        public double calculate(double firstValue, double secondValue)
-        {
-            return firstValue + secondValue;
-        }
-
-    }
-    class Minus : calculator2
-    {
-        public double calculate(double firstValue, double secondValue)
-        {
-            return firstValue - secondValue;
-        }
-    }
-    class Myltiply : calculator2
-    {
-        public double calculate(double firstValue, double secondValue)
-        {
-            return firstValue * secondValue;
-        }
-    }
-    class div : calculator2
-    {
-        public double calculate(double firstValue, double secendValue)
-        {
-            return firstValue / secendValue;
-        }
-    }
-    class v : calculator2
-    {
-        public double calculate(double firstValue, double secondValue)
-        {
-            return Math.Pow(firstValue, secondValue);
-        }
-
-    }
-    static class Class1
+   static class Class1
     {
         public static calculator2 cal1(int count)
         {
-            switch (count)
+            switch(count)
             {
                 case 1:
                     return new Plus();
@@ -67,12 +25,66 @@ namespace calcul
                 default:
                     return new Plus();
             }
+                
+           
+        }
+    }
+    interface calculator2
+    {
+        double calculate(double a, double b);
+    }
+    class Plus : calculator2
+    {
+        public double calculate(double firstValue, double secendValue)
+        {
+            return firstValue + secendValue;
+        }
 
+    }
+    class Minus : calculator2
+    {
+        public double calculate(double firstValue, double secendValue)
+        {
+            return firstValue - secendValue;
+        }
+    }
+    class Myltiply : calculator2
+    {
+        public double calculate(double firstValue, double secendValue)
+        {
+            return firstValue * secendValue;
+        }
+    }
+    class div : calculator2
+    {
+        public double calculate(double firstValue, double secendValue)
+        {
+            return firstValue / secendValue;
+        }
+    }
+    class v : calculator2
+    {
+        public double calculate(double firstValue, double secendValue)
+        {
+            return Math.Pow(firstValue, secendValue);
+        }
+
+    }
+
+    static class Class2
+    {
+       public static calculator1 cal2(int count)
+        {
+            switch (count)
+            {
+                case 6:
+                    return new k();
+                default:
+                    return new k();
+            }
 
         }
     }
-
-    
     interface calculator1
     {
         double calculate(double fitrsValue);
@@ -86,19 +98,6 @@ namespace calcul
         }
     }
 
-    static class Class2
-    {
-        public static calculator1 cal2(int count)
-        {
-            switch (count)
-            {
-                case 6:
-                    return new k();
-                default:
-                    return new k();
-            }
 
-        }
-    }
 
 }
